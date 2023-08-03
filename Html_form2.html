@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Form 2</title>
+    <style>
+      body {
+        background-image: url(https://th.bing.com/th/id/OIP.9fTbGl4pFkqmIyayRV0RUAHaEo?w=272&h=180&c=7&r=0&o=5&pid=1.7);
+        background-size: cover;
+        text-align: center;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 50px; */
+      }
+      fieldset {
+        width: fit-content;
+        padding: 30px 50px;
+        border-radius: 25%;
+        color: rgb(22, 3, 3);
+        font-weight: 1000;
+        font-style: italic;
+      }
+      #btn1 {
+        background: linear-gradient(45deg, red, orange);
+        color: ghostwhite;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-weight: 1000;
+        font-style: italic;
+        padding: 5px;
+      }
+      #btn2 {
+        background: linear-gradient(45deg, rgb(0, 204, 255), rgb(62, 8, 189));
+        color: ghostwhite;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-weight: 1000;
+        font-style: italic;
+        padding: 5px;
+      }
+      tr,
+      td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Sign-In</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="name"> User-Name</label>
+            </td>
+            <td><input type="text" name="" id="name" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td><input type="password" name="" id="password" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"> MailId</label>
+            </td>
+            <td><input type="email" name="" id="email" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="state">Select State</label>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="">---select state---</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Karnataka</option>
+                <option value="">Maharashtra</option>
+                <option value="">Bihar</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Odissa</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Login" id="btn1" /></td>
+
+            <td><input type="reset" value="Logout" id="btn2" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
